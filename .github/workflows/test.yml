@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3.0.2
+#       - name: Checkout
+#         uses: actions/checkout@v3.0.2
     
       - uses: zharinov/setup-action@main
         with:
