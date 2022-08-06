@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: zharinov/setup-action@main
         with:
-          bb: latest
+          babashka: latest
 
       - run: bb --version
