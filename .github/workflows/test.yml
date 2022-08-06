@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: zharinov/setup-action@main
         with:
-          babashka: latest
+          clojure-cli: latest
 
-      - run: bb --version
+      - run: clojure -e '(println "Hello")'
