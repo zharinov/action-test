@@ -6,9 +6,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3.0.2
+    
       - uses: zharinov/setup-action@main
         with:
           clojure-cli: latest
-          cache-key: clj-deps-${{ hashFiles('**/project.clj', '**/deps.edn', '**/bb.edn', '**/shadow-cljs.edn') }}
 
       - run: clojure -e '(println "Hello")'
