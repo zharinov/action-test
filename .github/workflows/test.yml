@@ -1,0 +1,7 @@
+on:
+  - push
+  
+jobs:
+  test:
+    - uses: zharinov/action@main
+      
