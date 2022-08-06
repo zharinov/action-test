@@ -6,3 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: zharinov/action@main
+        with:
+          cli: latest
+
+      - run: clojure --version
