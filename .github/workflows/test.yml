@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: zharinov/setup-action@main
         with:
-          cli: latest
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - run: clojure --version
