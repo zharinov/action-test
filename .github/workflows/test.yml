@@ -3,6 +3,22 @@ on:
   
 jobs:
   test:
+    strategy:
+      matrix:
+        os: 
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        java-dist:
+          - temurin
+          - zulu
+          - adopt
+          - adopt-hotspot
+          - adopt-openj9
+          - liberica
+          - microsoft
+          - corretto
+  
     runs-on: ubuntu-latest
 
     steps:
