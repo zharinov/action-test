@@ -7,17 +7,18 @@ jobs:
       matrix:
         os: 
           - ubuntu-latest
-          - macos-latest
-          - windows-latest
+#           - macos-latest
+#           - windows-latest
         java:
-          - temurin
-          - zulu
+          - graalvm
+#           - temurin
+#           - zulu
           - adopt
-          - adopt-hotspot
-          - adopt-openj9
-          - liberica
-          - microsoft
-          - corretto
+#           - adopt-hotspot
+#           - adopt-openj9
+#           - liberica
+#           - microsoft
+#           - corretto
   
     runs-on: ${{ matrix.os }}
 
