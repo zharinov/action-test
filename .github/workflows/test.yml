@@ -9,7 +9,7 @@ jobs:
           - ubuntu-latest
           - macos-latest
           - windows-latest
-        java-dist:
+        java:
           - temurin
           - zulu
           - adopt
@@ -19,7 +19,7 @@ jobs:
           - microsoft
           - corretto
   
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout
@@ -27,6 +27,6 @@ jobs:
     
       - uses: zharinov/setup-action@main
         with:
-          java: zulu
+          java: ${{ matrix.java }}
 
       - run: java -version
