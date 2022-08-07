@@ -13,4 +13,5 @@ jobs:
         with:
           java: graalvm
 
-      - run: java -version
+      - run: which java
+      - run: which native-image
