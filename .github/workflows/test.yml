@@ -13,4 +13,4 @@ jobs:
         with:
           java: graalvm
 
-      - run: java -version
+      - run: echo "${{ env }}"
