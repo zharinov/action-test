@@ -13,4 +13,4 @@ jobs:
         with:
           clojure-cli: latest
 
-      - run: clojure -e '(println "Hello")'
+      - run: java -version
