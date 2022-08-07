@@ -11,6 +11,6 @@ jobs:
     
       - uses: zharinov/setup-action@main
         with:
-          clojure-cli: latest
+          java: graalvm
 
       - run: java -version
