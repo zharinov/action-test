@@ -30,4 +30,4 @@ jobs:
         with:
           java: ${{ matrix.java }}
 
-      - run: clojure -e '(println "Hello ${{ matrix.os }} ${{ matrix.java}}")'
+      - run: clojure -e "*clojure-version*"
